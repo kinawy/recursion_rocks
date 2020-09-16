@@ -3,9 +3,16 @@
 
 # This function returns the largest number in a given array.
 
-def find_max(l):
+array_numbers = [2,3,4,5,-40]
+
+def find_max(l, num = 0):
+    num = l.pop()
+    if num > max(l):
+        return num
+    return find_max(l, num)
     # Write code here
-    pass
+
+print(find_max(array_numbers))
 
 # print(find_max([1, 4, 45, 6, -50, 10, 2]))
 # => 45
