@@ -5,7 +5,13 @@
 # https://en.wikipedia.org/wiki/Fibonacci_number
 # For this function, the first two fibonacci numbers are 1 and 1
 
-def fib(n):
+def fib(n, count=0):
+    n-=1
+    num = n-1
+    if n + num == n:
+        return num
+    
+
     # Write code here
     pass
 
