@@ -5,15 +5,22 @@
 # https://en.wikipedia.org/wiki/Fibonacci_number
 # For this function, the first two fibonacci numbers are 1 and 1
 
-def fib(n, count=0):
-    n-=1
-    num = n-1
-    if n + num == n:
-        return num
+def fib(n):
+    if n < 0:
+        return 0
+    if n == 1 or n == 2:
+        return n
+    else:
+        return fib(n - 1)  + fib(n - 2)
+    # num = n-1
+    # if n + num == n:
+    #     return num
+    # fib(num, count+1)
+
+print(fib(2))
     
 
     # Write code here
-    pass
 
 # print(fib(-1))
 # => 0

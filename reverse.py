@@ -4,10 +4,11 @@
 # Write a recursive function called `reverse` that accepts a ss and returns a reversed ss.
 
 def reverse_string(string):
-    print(string[1:])
+    # print(string[1:])
     if len(string) == 0:
         return string
     else:
+        print(string[0], string[1:])
         return reverse_string(string[1:]) + string[0]
 
 print(reverse_string("Python"))
